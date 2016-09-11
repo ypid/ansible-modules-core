@@ -121,9 +121,9 @@ os_ironic_node:
   power: present
   deploy: True
   maintenance: False
-  config_drive: "http://192.168.1.1/host-configdrive.iso"
+  config_drive: "http://192.0.2.1/host-configdrive.iso"
   instance_info:
-    image_source: "http://192.168.1.1/deploy_image.img"
+    image_source: "http://192.0.2.1/deploy_image.img"
     image_checksum: "356a6b55ecc511a20c33c946c4e678af"
     image_disk_format: "qcow"
   delegate_to: localhost

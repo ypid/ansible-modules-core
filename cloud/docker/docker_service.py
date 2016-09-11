@@ -373,7 +373,7 @@ service:
                           description: Mac Address assigned to the virtual NIC.
                           returned: success
                           type: str
-                          example: "02:42:ac:11:00:02"
+                          example: "00:00:5E:00:53:42"
               state:
                   description: Information regarding the current disposition of the container.
                   returned: success

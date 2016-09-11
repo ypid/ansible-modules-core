@@ -179,7 +179,7 @@ EXAMPLES = '''
     mode: custom
     subnet_name: subnet_example
     subnet_region: us-central1
-    ipv4_range: 10.0.0.0/16
+    ipv4_range: 192.0.2.0/24
 
 '''
 

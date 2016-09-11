@@ -79,13 +79,13 @@ notes:
 
 EXAMPLES = '''
 - name: associate an elastic IP with an instance
-  ec2_eip: device_id=i-1212f003 ip=93.184.216.119
+  ec2_eip: device_id=i-1212f003 ip=198.51.100.119
 - name: associate an elastic IP with a device
-  ec2_eip: device_id=eni-c8ad70f3 ip=93.184.216.119
+  ec2_eip: device_id=eni-c8ad70f3 ip=198.51.100.119
 - name: disassociate an elastic IP from an instance
-  ec2_eip: device_id=i-1212f003 ip=93.184.216.119 state=absent
+  ec2_eip: device_id=i-1212f003 ip=198.51.100.119 state=absent
 - name: disassociate an elastic IP with a device
-  ec2_eip: device_id=eni-c8ad70f3 ip=93.184.216.119 state=absent
+  ec2_eip: device_id=eni-c8ad70f3 ip=198.51.100.119 state=absent
 - name: allocate a new elastic IP and associate it with an instance
   ec2_eip: device_id=i-1212f003
 - name: allocate a new elastic IP without associating it to anything

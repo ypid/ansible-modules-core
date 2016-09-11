@@ -75,7 +75,7 @@ options:
           dictionary structure.
           e.g.  allowed_address_pairs:
                   - ip_address: 10.1.0.12
-                    mac_address: ab:cd:ef:12:34:56
+                    mac_address: 00:00:5E:00:53:56
                   - ip_address: ..."
      required: false
      default: None

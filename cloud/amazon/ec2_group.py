@@ -95,7 +95,7 @@ EXAMPLES = '''
       - proto: tcp
         from_port: 22
         to_port: 22
-        cidr_ip: 10.0.0.0/8
+        cidr_ip: 192.0.2.0/24
       - proto: tcp
         from_port: 443
         to_port: 443
@@ -107,7 +107,7 @@ EXAMPLES = '''
       - proto: udp
         from_port: 10050
         to_port: 10050
-        cidr_ip: 10.0.0.0/8
+        cidr_ip: 192.0.2.0/24
       - proto: udp
         from_port: 10051
         to_port: 10051
@@ -115,7 +115,7 @@ EXAMPLES = '''
       - proto: icmp
         from_port: 8 # icmp type, -1 = any type
         to_port:  -1 # icmp subtype, -1 = any subtype
-        cidr_ip: 10.0.0.0/8
+        cidr_ip: 192.0.2.0/24
       - proto: all
         # the containing group name may be specified here
         group_name: example

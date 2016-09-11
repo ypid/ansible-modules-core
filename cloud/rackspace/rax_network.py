@@ -55,7 +55,7 @@ EXAMPLES = '''
         module: rax_network
         credentials: ~/.raxpub
         label: my-net
-        cidr: 192.168.3.0/24
+        cidr: 192.0.2.0/24
         state: present
 '''
 

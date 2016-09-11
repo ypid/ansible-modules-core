@@ -220,7 +220,7 @@ options:
     default: null
   mac_address:
     description:
-      - Container MAC address (e.g. 92:d0:c6:0a:29:33)
+      - Container MAC address (e.g. 00:00:5E:00:53:55)
     default: null
     required: false
   memory:

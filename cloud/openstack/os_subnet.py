@@ -128,15 +128,15 @@ EXAMPLES = '''
     state: present
     network_name: network1
     name: net1subnet
-    cidr: 192.168.0.0/24
+    cidr: 192.0.2.0/24
     dns_nameservers:
-       - 8.8.8.7
-       - 8.8.8.8
+       - 198.51.100.23
+       - 198.51.100.42
     host_routes:
        - destination: 0.0.0.0/0
-         nexthop: 12.34.56.78
-       - destination: 192.168.0.0/24
-         nexthop: 192.168.0.1
+         nexthop: 192.0.2.1
+       - destination: 203.0.113.0/24
+         nexthop: 203.0.113.1
 
 # Delete a subnet
 - os_subnet:
@@ -149,10 +149,10 @@ EXAMPLES = '''
     name: intv6
     network_name: internal
     ip_version: 6
-    cidr: 2db8:1::/64
+    cidr: 2001:DB8::/64
     dns_nameservers:
-        - 2001:4860:4860::8888
-        - 2001:4860:4860::8844
+        - 2001:DB8:1::
+        - 2001:DB8:1::1
     ipv6_ra_mode: dhcpv6-stateless
     ipv6_address_mode: dhcpv6-stateless
 '''

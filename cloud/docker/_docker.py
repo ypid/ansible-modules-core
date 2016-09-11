@@ -465,8 +465,8 @@ EXAMPLES = '''
     - "8080:9000"
     - "127.0.0.1:8081:9001/udp"
     extra_hosts:
-      host1: "192.168.0.1"
-      host2: "192.168.0.2"
+      host1: "192.0.2.1"
+      host2: "192.0.2.2"
     env:
         SECRET_KEY: ssssh
 

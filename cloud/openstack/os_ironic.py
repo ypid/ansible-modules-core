@@ -90,7 +90,7 @@ options:
             required: true
     nics:
       description:
-        - 'A list of network interface cards, eg, " - mac: aa:bb:cc:aa:bb:cc"'
+        - 'A list of network interface cards, eg, " - mac: 00:00:5E:00:53:05"'
       required: true
     properties:
       description:
@@ -137,8 +137,8 @@ EXAMPLES = '''
       ram: 8192
       disk_size: 64
     nics:
-      - mac: "aa:bb:cc:aa:bb:cc"
-      - mac: "dd:ee:ff:dd:ee:ff"
+      - mac: "00:00:5E:00:53:50"
+      - mac: "00:00:5E:00:53:51"
     driver_info:
       power:
         ipmi_address: "1.2.3.4"

@@ -67,8 +67,8 @@ options:
 
 EXAMPLES = '''
 - nxos_static_route:
-    prefix: "192.168.20.64/24"
-    next_hop: "3.3.3.3"
+    prefix: "192.0.2.64/24"
+    next_hop: "198.51.100.23"
     route_name: testing
     pref: 100
     username: "{{ un }}"
@@ -81,8 +81,8 @@ proposed:
     description: k/v pairs of parameters passed into module
     returned: verbose mode
     type: dict
-    sample: {"next_hop": "3.3.3.3", "pref": "100",
-            "prefix": "192.168.20.64/24", "route_name": "testing",
+    sample: {"next_hop": "198.51.100.23", "pref": "100",
+            "prefix": "192.0.2.64/24", "route_name": "testing",
             "vrf": "default"}
 existing:
     description: k/v pairs of existing configuration
@@ -93,14 +93,14 @@ end_state:
     description: k/v pairs of configuration after module execution
     returned: verbose mode
     type: dict
-    sample: {"next_hop": "3.3.3.3", "pref": "100",
-            "prefix": "192.168.20.0/24", "route_name": "testing",
+    sample: {"next_hop": "198.51.100.23", "pref": "100",
+            "prefix": "192.0.2.0/24", "route_name": "testing",
             "tag": null}
 updates:
     description: commands sent to the device
     returned: always
     type: list
-    sample: ["ip route 192.168.20.0/24 3.3.3.3 name testing 100"]
+    sample: ["ip route 192.0.2.0/24 198.51.100.23 name testing 100"]
 changed:
     description: check to see if a change was made on the device
     returned: always

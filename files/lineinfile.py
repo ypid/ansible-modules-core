@@ -153,7 +153,7 @@ EXAMPLES = r"""
 # Add a line to a file if it does not exist, without passing regexp
 - lineinfile:
     dest: /tmp/testfile
-    line: '192.168.1.99 foo.lab.net foo'
+    line: '192.0.2.99 foo.lab.net foo'
 
 # Fully quoted because of the ': ' on the line. See the Gotchas in the YAML docs.
 - lineinfile: "

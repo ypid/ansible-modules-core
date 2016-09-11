@@ -93,8 +93,8 @@ EXAMPLES = '''
     domain: 100
     role_priority: 1000
     system_priority: 2000
-    pkl_dest: 192.168.100.4
-    pkl_src: 10.1.100.20
+    pkl_dest: 192.0.2.4
+    pkl_src: 203.0.113.20
     peer_gw: true
     auto_recovery: true
     username: "{{ un }}"
@@ -108,15 +108,15 @@ proposed:
     returned: always
     type: dict
     sample: {"auto_recovery": true, "domain": "100",
-            "peer_gw": true, "pkl_dest": "192.168.100.4",
-            "pkl_src": "10.1.100.20", "pkl_vrf": "management",
+            "peer_gw": true, "pkl_dest": "192.0.2.4",
+            "pkl_src": "203.0.113.20", "pkl_vrf": "management",
             "role_priority": "1000", "system_priority": "2000"}
 existing:
     description: k/v pairs of existing VPC configuration
     type: dict
     sample: {"auto_recovery": true, "delay_restore": null,
             "domain": "100", "peer_gw": true,
-            "pkl_dest": "192.168.100.2", "pkl_src": "10.1.100.20",
+            "pkl_dest": "192.168.100.2", "pkl_src": "203.0.113.20",
             "pkl_vrf": "management", "role_priority": "1000",
             "system_priority": "2000"}
 end_state:
@@ -124,15 +124,15 @@ end_state:
     returned: always
     type: dict
     sample: {"auto_recovery": true, "domain": "100",
-            "peer_gw": true, "pkl_dest": "192.168.100.4",
-            "pkl_src": "10.1.100.20", "pkl_vrf": "management",
+            "peer_gw": true, "pkl_dest": "192.0.2.4",
+            "pkl_src": "203.0.113.20", "pkl_vrf": "management",
             "role_priority": "1000", "system_priority": "2000"}
 updates:
     description: commands sent to the device
     returned: always
     type: list
     sample: ["vpc domain 100",
-            "peer-keepalive destination 192.168.100.4 source 10.1.100.20 vrf management",
+            "peer-keepalive destination 192.0.2.4 source 203.0.113.20 vrf management",
             "auto-recovery", "peer-gateway"]
 changed:
     description: check to see if a change was made on the device

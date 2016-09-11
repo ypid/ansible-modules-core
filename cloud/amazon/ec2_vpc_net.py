@@ -84,7 +84,7 @@ EXAMPLES = '''
 
 - ec2_vpc_net:
     name: Module_dev2
-    cidr_block: 10.10.0.0/16
+    cidr_block: 192.0.2.0/24
     region: us-east-1
     tags:
       module: ec2_vpc_net

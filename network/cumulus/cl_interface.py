@@ -175,7 +175,7 @@ cl_interfaces:
         ipv4: '10.2.2.2/24'
         ipv6: '10:2:2::2/127'
         virtual_ip: '10.2.2.254'
-        virtual_mac: '00:00:5E:00:10:10'
+        virtual_mac: '00:00:5E:00:53:44'
 
 
 '''

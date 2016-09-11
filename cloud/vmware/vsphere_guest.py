@@ -278,8 +278,8 @@ EXAMPLES = '''
 - hw_eth0:
   - addresstype: "assigned"
     label: "Network adapter 1"
-    macaddress: "00:22:33:33:44:55"
-    macaddress_dash: "00-22-33-33-44-55"
+    macaddress: "00:00:5E:00:53:AB"
+    macaddress_dash: "00-00-5E-00-53-AB"
     ipaddresses: ['192.0.2.100', '2001:DB8:56ff:feac:4d8a']
     summary: "VM Network"
   hw_guest_full_name: "newvm001"
